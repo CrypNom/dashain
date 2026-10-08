@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Dashain 2083 🌸 Tika, Jamara & Blessings</title>
+<meta name="description" content="Celebrate Dashain 2083 with blessings, tika & jamara, family memories, a Vijaya Dashami countdown and cozy wishes.">
+<meta name="theme-color" content="#ff9ec4">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Happy Dashain 2083 🌸">
+<meta property="og:description" content="Receive tika & jamara blessings, make wishes and count down to Vijaya Dashami.">
+<meta property="og:image" content="images/og-cover.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="images/og-cover.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Baloo+2:wght@500;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="bg-blobs" aria-hidden="true"><i></i><i></i><i></i></div>
+<div id="sky" aria-hidden="true"></div>
+<canvas id="confetti" aria-hidden="true"></canvas>
+
+<header class="nav glass">
+  <a href="#home" class="logo">🌸 Dashain 2083</a>
+  <nav>
+    <a href="#blessing">Blessing</a><a href="#album">Album</a><a href="#countdown">Countdown</a><a href="#songs">Songs</a><a href="#wishes">Wishes</a>
+  </nav>
+  <button id="musicBtn" class="chip" aria-pressed="false" title="Toggle music">🎵 <span>Music off</span></button>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="swing" aria-hidden="true">
+    <div class="rope l"></div><div class="rope r"></div>
+    <div class="seat glass"><span>🧒</span><span>👧</span></div>
+  </div>
+  <div class="hero-card glass">
+    <span class="sticker s1">🌼 Jai Dashain!</span>
+    <h1>Happy <em>Dashain</em> 2083</h1>
+    <p class="hand">Shubha Bijaya Dashami 🙏</p>
+    <p class="bless">May Maa Durga shower your home with warmth, health &amp; abundance. May the golden jamara grow your joy, the tika bring you strength, and every kite carry your dreams a little higher.</p>
+    <div class="row">
+      <a class="btn" href="#blessing">Receive Blessing 🪔</a>
+      <button class="btn ghost" id="confettiBtn">Celebrate 🎉</button>
+    </div>
+    <span class="sticker s2">🪁 kite season</span>
+  </div>
+</section>
+
+<section id="blessing" class="sec">
+  <h2>Elders’ Blessing</h2>
+  <p class="sub">Tap the card to receive tika &amp; jamara</p>
+  <div class="bless-card glass" id="blessCard" role="button" tabindex="0" aria-label="Receive tika and jamara blessing">
+    <div class="face">
+      <div class="jam" aria-hidden="true"></div>
+      <div class="head">
+        <div class="tika-wrap"><div class="tika-rice"></div><div class="tika"></div></div>
+        <div class="eye l"></div><div class="eye r"></div>
+        <div class="cheek l"></div><div class="cheek r"></div>
+        <div class="smile"></div>
+      </div>
+    </div>
+    <p class="hand big" id="blessMsg">Tap for Aashirwad ✨</p>
+  </div>
+</section>
+
+<section id="album" class="sec">
+  <h2>Dashain Memories</h2>
+  <p class="sub">Tap any frame to add your own family photo</p>
+  <div class="gallery" id="gallery"></div>
+  <input type="file" id="fileIn" accept="image/*" hidden>
+</section>
+
+<section id="countdown" class="sec">
+  <h2>Countdown to Vijaya Dashami</h2>
+  <p class="sub" id="cdDate"></p>
+  <div class="cd glass" id="cd">
+    <div><b id="cdD">00</b><span>days</span></div>
+    <div><b id="cdH">00</b><span>hours</span></div>
+    <div><b id="cdM">00</b><span>mins</span></div>
+    <div><b id="cdS">00</b><span>secs</span></div>
+  </div>
+  <p class="hand" id="cdMsg"></p>
+</section>
+
+<section id="songs" class="sec">
+  <h2>Dashain Songs</h2>
+  <p class="sub">Sing along with the festival favourites 🎶</p>
+  <div class="songs">
+    <article class="song glass">
+      <div class="disc" aria-hidden="true"><span>🪁</span></div>
+      <div class="song-info">
+        <h3>Dashain Aayo</h3><p class="artist">Muglan (2005) · Udit Narayan, Deepa Jha & others</p><p class="blurb">The evergreen welcome-home Dashain classic.</p>
+        <div class="row left"><a class="btn sm" href="https://www.youtube.com/results?search_query=Dashain+Aayo+Muglan+Udit+Narayan" target="_blank" rel="noopener" data-song>▶ YouTube</a><a class="btn sm ghost" href="https://open.spotify.com/search/Dashain%20Aayo%20Muglan%20Udit%20Narayan" target="_blank" rel="noopener" data-song>Spotify</a></div>
+      </div>
+    </article>
+    <article class="song glass">
+      <div class="disc" aria-hidden="true"><span>🎠</span></div>
+      <div class="song-info">
+        <h3>Dashain Tihar</h3><p class="artist">Sugam Pokharel</p><p class="blurb">Instant festive vibes, swing and all.</p>
+        <div class="row left"><a class="btn sm" href="https://www.youtube.com/results?search_query=Dashain+Tihar+Sugam+Pokharel" target="_blank" rel="noopener" data-song>▶ YouTube</a><a class="btn sm ghost" href="https://open.spotify.com/search/Dashain%20Tihar%20Sugam%20Pokharel" target="_blank" rel="noopener" data-song>Spotify</a></div>
+      </div>
+    </article>
+    <article class="song glass">
+      <div class="disc" aria-hidden="true"><span>🌾</span></div>
+      <div class="song-info">
+        <h3>Dhankai Bala Jhulaula</h3><p class="artist">APF Dashain song</p><p class="blurb">A much-loved village-fair favourite.</p>
+        <div class="row left"><a class="btn sm" href="https://www.youtube.com/results?search_query=Dhankai+Bala+Jhulaula+APF+Dashain+song" target="_blank" rel="noopener" data-song>▶ YouTube</a><a class="btn sm ghost" href="https://open.spotify.com/search/Dhankai%20Bala%20Jhulaula%20APF%20Dashain%20song" target="_blank" rel="noopener" data-song>Spotify</a></div>
+      </div>
+    </article>
+  </div>
+  <small class="note">Songs open on YouTube / Spotify so the artists get their credit.</small>
+</section>
+
+<section id="wishes" class="sec">
+  <h2>Wish Jar</h2>
+  <div class="wish glass">
+    <p id="wishText" class="wish-text">Press the button for a cozy Dashain wish 💌</p>
+    <button class="btn" id="wishBtn">New Wish ✨</button>
+  </div>
+
+  <div class="mywish glass">
+    <h3>Write your own wish ✍️</h3>
+    <input id="wName" maxlength="24" placeholder="Your name (optional)" autocomplete="name">
+    <textarea id="wMsg" maxlength="120" rows="3" placeholder="Happy Dashain! Write a short message…"></textarea>
+    <div class="count"><span id="wCount">0</span>/120</div>
+    <div class="row">
+      <button class="btn" id="wMake">Make my wish card 💌</button>
+    </div>
+    <div class="card-out" id="cardOut" hidden>
+      <div class="wishcard" id="wishCard">
+        <span class="wc-top">🌸 Happy Dashain 2083 🌸</span>
+        <p class="wc-msg" id="wcMsg"></p>
+        <span class="wc-from" id="wcFrom"></span>
+      </div>
+      <div class="row share">
+        <button class="btn" id="shareBtn">Share 🔗</button>
+        <button class="btn ghost" id="copyBtn">Copy link</button>
+        <a class="btn ghost" id="waBtn" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <small id="shareNote"></small>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>Made with 💗 for family &amp; festival • Dashain 2083 • All Right Reserved • Premey</footer>
+
+<nav class="tabbar glass" aria-label="Sections">
+  <a href="#home"><i>🏠</i>Home</a><a href="#blessing"><i>🪔</i>Bless</a><a href="#album"><i>📸</i>Album</a><a href="#songs"><i>🎶</i>Songs</a><a href="#wishes"><i>💌</i>Wish</a>
+</nav>
+<audio id="bgm" src="audio/dashain-loop.mp3" loop preload="none"></audio>
+<audio id="chime" src="audio/blessing.mp3" preload="auto"></audio>
+<script src="js/main.js"></script>
+</body>
+</html>
